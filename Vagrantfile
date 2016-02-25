@@ -69,5 +69,7 @@ Vagrant.configure(2) do |config|
      sudo yum -y install puppet-agent
      sudo yum -y install ruby
      echo "role=web" > /opt/puppetlabs/facter/facts.d/role.txt
+     cp /vagrant/files/vimrc /root/.vimrc
+     cp /vagrant/files/vimrc /home/vagrant/.vimrc
    SHELL
 end
